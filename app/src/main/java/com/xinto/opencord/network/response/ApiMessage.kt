@@ -8,4 +8,5 @@ data class ApiMessage(
     @SerializedName("channel_id") val channelId: Long,
     @SerializedName("content") val content: String,
     @SerializedName("author") val author: ApiMessageAuthor,
+    @SerializedName("attachments") val attachments: List<ApiAttachment>,
 ) : ApiResponse
